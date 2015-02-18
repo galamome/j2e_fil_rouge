@@ -1,18 +1,18 @@
 package com.galamome.beans;
 
-public class Bean_commande {
-	/* Propriétés du bean */
-    private Bean_client client;
+public class Commande {
+    /* Propriétés du bean */
+    private Client client;
     private String date;
     private Double montant;
     private String modePaiement;
     private String statutPaiement;
     private String modeLivraison;
     private String statutLivraison;
-    public Bean_client getClient() {
+    public Client getClient() {
         return client;
     }
-    public void setClient( Bean_client client ) {
+    public void setClient( Client client ) {
         this.client = client;
     }
     public String getDate() {
@@ -51,5 +51,4 @@ public class Bean_commande {
     public void setStatutLivraison( String statutLivraison ) {
         this.statutLivraison = statutLivraison;
     }
-
 }
