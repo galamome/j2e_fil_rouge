@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
     <servlet>
         <servlet-name>CreationClient</servlet-name>
         <servlet-class>com.galamome.servlets.CreationClient</servlet-class>
@@ -7,8 +13,7 @@
     <servlet>
         <servlet-name>CreationCommande</servlet-name>
         <servlet-class>com.galamome.servlets.CreationCommande</servlet-class>
-    </servlet>
-    
+    </servlet>    
     <servlet-mapping>
         <servlet-name>CreationClient</servlet-name>
         <url-pattern>/creationClient</url-pattern>
